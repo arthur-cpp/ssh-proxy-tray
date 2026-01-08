@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=SSH Proxy Tray
+Comment=SSH SOCKS proxy system tray application
+Exec=ssh-proxy-tray
+Icon=network-vpn-symbolic
+Categories=Network;System;
+Keywords=ssh;proxy;socks;tray;vpn;
+StartupNotify=false
+NoDisplay=false
+Terminal=false
