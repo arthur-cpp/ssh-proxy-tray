@@ -1,3 +1,13 @@
+ssh-proxy-tray (0.2.3-1) unstable; urgency=medium
+
+  * Add desktop file for application menu entry
+    - Add ssh-proxy-tray.desktop file to debian package
+    - Install desktop file to /usr/share/applications/
+    - Application now appears in system application menu after installation
+    - Users can launch the application from menu or application launcher
+
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 08 Jan 2026 15:57:41 +0300
+
 ssh-proxy-tray (0.2.2-1) unstable; urgency=medium
 
   * Fix: clear system proxy settings when switching to local mode
