@@ -5,7 +5,7 @@ ssh-proxy-tray (0.2.2-1) unstable; urgency=medium
     - Check gsettings state to determine if system proxy needs clearing
     - Always clear system proxy when switching from system to local mode
 
- -- arthur-cpp <arthur-cpp@users.noreply.github.com>  Thu, 08 Jan 2026 14:27:55 +0300
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 08 Jan 2026 14:27:55 +0300
 
 ssh-proxy-tray (0.2.1-1) unstable; urgency=medium
 
@@ -14,7 +14,7 @@ ssh-proxy-tray (0.2.1-1) unstable; urgency=medium
     - Auto-reconnect proxy when mode is toggled from menu
     - Sync menu state with settings dialog changes
 
- -- arthur-cpp <arthur-cpp@users.noreply.github.com>  Thu, 08 Jan 2026 14:24:49 +0300
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 08 Jan 2026 14:24:49 +0300
 
 ssh-proxy-tray (0.2.0-1) unstable; urgency=medium
 
@@ -26,13 +26,13 @@ ssh-proxy-tray (0.2.0-1) unstable; urgency=medium
     - Update tray tooltip to show proxy mode (System/Local)
     - Auto-reconnect when proxy mode changes
 
- -- arthur-cpp <arthur-cpp@users.noreply.github.com>  Thu, 08 Jan 2026 14:22:08 +0300
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 08 Jan 2026 14:22:08 +0300
 
 ssh-proxy-tray (0.1.1-1) unstable; urgency=low
 
   * Fix compilation: add forward declaration for isProxyRunning()
 
- -- arthur-cpp <arthur-cpp@users.noreply.github.com>  Thu, 08 Jan 2026 14:17:17 +0300
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 08 Jan 2026 14:17:17 +0300
 
 ssh-proxy-tray (0.1.0-1) unstable; urgency=medium
 
@@ -47,7 +47,7 @@ ssh-proxy-tray (0.1.0-1) unstable; urgency=medium
     - Add fallback icons when theme icons unavailable
     - Add delay when reconnecting after settings change
 
- -- arthur-cpp <arthur-cpp@users.noreply.github.com>  Thu, 08 Jan 2026 14:16:04 +0300
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 08 Jan 2026 14:16:04 +0300
 
 ssh-proxy-tray (0.0.5-1) unstable; urgency=low
 
@@ -55,7 +55,7 @@ ssh-proxy-tray (0.0.5-1) unstable; urgency=low
     - Enable LTO, PIE, strip symbols
     - Maximum optimization level
 
- -- arthur-cpp <arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 18:00:07 +0300
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 18:00:07 +0300
 
 ssh-proxy-tray (0.0.4-1) unstable; urgency=medium
 
@@ -64,7 +64,7 @@ ssh-proxy-tray (0.0.4-1) unstable; urgency=medium
     - Store settings using QSettings
     - Add auto-connect and autostart options
 
- -- arthur-cpp <arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 17:57:53 +0300
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 17:57:53 +0300
 
 ssh-proxy-tray (0.0.3-1) unstable; urgency=medium
 
@@ -72,14 +72,14 @@ ssh-proxy-tray (0.0.3-1) unstable; urgency=medium
     - Add background timer to monitor proxy status every 2 seconds
     - Detect external proxy start/stop and update UI accordingly
 
- -- arthur-cpp <arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 17:31:56 +0300
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 17:31:56 +0300
 
 ssh-proxy-tray (0.0.2-1) unstable; urgency=medium
 
   * Stop proxy on quit
     - Properly disable proxy when application quits
 
- -- arthur-cpp <arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 17:16:01 +0300
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 17:16:01 +0300
 
 ssh-proxy-tray (0.0.1-1) unstable; urgency=medium
 
@@ -88,7 +88,7 @@ ssh-proxy-tray (0.0.1-1) unstable; urgency=medium
     - Add autostart option
     - Add system tray icons
 
- -- arthur-cpp <arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 16:57:43 +0300
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 16:57:43 +0300
 
 ssh-proxy-tray (0.0.0-1) unstable; urgency=low
 
@@ -97,4 +97,4 @@ ssh-proxy-tray (0.0.0-1) unstable; urgency=low
     - System tray integration
     - Proxy enable/disable functionality
 
- -- arthur-cpp <arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 14:47:58 +0300
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Thu, 30 Oct 2025 14:47:58 +0300
