@@ -27,7 +27,11 @@ if [ -f debian/rules ]; then
 fi
 
 # Build (binary-only), no signing, parallel, skip tests
-export DEB_BUILD_OPTIONS="${DEB_BUILD_OPTIONS:-} nocheck parallel=$(nproc)"
+if [ -n "${DEB_BUILD_OPTIONS:-}" ]; then
+  export DEB_BUILD_OPTIONS="${DEB_BUILD_OPTIONS} nocheck parallel=$(nproc)"
+else
+  export DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)"
+fi
 dpkg-buildpackage -b -uc -us -j"$(nproc)"
 
 # Move only our artifacts
