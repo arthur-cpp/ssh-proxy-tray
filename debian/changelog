@@ -1,0 +1,100 @@
+ssh-proxy-tray (0.2.2-1) unstable; urgency=medium
+
+  * Fix: clear system proxy settings when switching to local mode
+    - Add clearSystemProxy parameter to disableProxy()
+    - Check gsettings state to determine if system proxy needs clearing
+    - Always clear system proxy when switching from system to local mode
+
+ -- arthur-cpp  Thu, 08 Jan 2026 14:27:55 +0300
+
+ssh-proxy-tray (0.2.1-1) unstable; urgency=medium
+
+  * Add 'Use as system proxy' toggle in tray menu
+    - Add checkable menu item above 'Autostart' for quick mode switching
+    - Auto-reconnect proxy when mode is toggled from menu
+    - Sync menu state with settings dialog changes
+
+ -- arthur-cpp  Thu, 08 Jan 2026 14:24:49 +0300
+
+ssh-proxy-tray (0.2.0-1) unstable; urgency=medium
+
+  * Add local proxy mode option (without system proxy)
+    - Add 'Use as system proxy' checkbox in settings dialog
+    - Add useSystemProxySetting() to control proxy mode
+    - In local mode: only start SSH tunnel, don't configure gsettings
+    - In system mode: start SSH tunnel + configure gsettings (default)
+    - Update tray tooltip to show proxy mode (System/Local)
+    - Auto-reconnect when proxy mode changes
+
+ -- arthur-cpp  Thu, 08 Jan 2026 14:22:08 +0300
+
+ssh-proxy-tray (0.1.1-1) unstable; urgency=low
+
+  * Fix compilation: add forward declaration for isProxyRunning()
+
+ -- arthur-cpp  Thu, 08 Jan 2026 14:17:17 +0300
+
+ssh-proxy-tray (0.1.0-1) unstable; urgency=medium
+
+  * Fix critical bugs: autostart, timer logic, error handling, state sync
+    - Implement autostart functionality (create .desktop file)
+    - Fix timer logic: remove duplicate enableProxy/disableProxy calls
+    - Add error handling and success checks for SSH commands
+    - Improve proxy state checking (port + process verification)
+    - Add port availability check before starting SSH
+    - Use QProcess with separate arguments instead of bash -c for security
+    - Sync proxyEnabled state with actual proxy status
+    - Add fallback icons when theme icons unavailable
+    - Add delay when reconnecting after settings change
+
+ -- arthur-cpp  Thu, 08 Jan 2026 14:16:04 +0300
+
+ssh-proxy-tray (0.0.5-1) unstable; urgency=low
+
+  * meson.build: optimizations
+    - Enable LTO, PIE, strip symbols
+    - Maximum optimization level
+
+ -- arthur-cpp  Thu, 30 Oct 2025 18:00:07 +0300
+
+ssh-proxy-tray (0.0.4-1) unstable; urgency=medium
+
+  * Use QSettings, settings dialog
+    - Add settings dialog for SSH host and SOCKS port configuration
+    - Store settings using QSettings
+    - Add auto-connect and autostart options
+
+ -- arthur-cpp  Thu, 30 Oct 2025 17:57:53 +0300
+
+ssh-proxy-tray (0.0.3-1) unstable; urgency=medium
+
+  * Add timer for check actual running proxy status
+    - Add background timer to monitor proxy status every 2 seconds
+    - Detect external proxy start/stop and update UI accordingly
+
+ -- arthur-cpp  Thu, 30 Oct 2025 17:31:56 +0300
+
+ssh-proxy-tray (0.0.2-1) unstable; urgency=medium
+
+  * Stop proxy on quit
+    - Properly disable proxy when application quits
+
+ -- arthur-cpp  Thu, 30 Oct 2025 17:16:01 +0300
+
+ssh-proxy-tray (0.0.1-1) unstable; urgency=medium
+
+  * Auto start/connect, icon
+    - Add auto-connect on startup option
+    - Add autostart option
+    - Add system tray icons
+
+ -- arthur-cpp  Thu, 30 Oct 2025 16:57:43 +0300
+
+ssh-proxy-tray (0.0.0-1) unstable; urgency=low
+
+  * Initial commit
+    - Basic SSH SOCKS proxy tray application
+    - System tray integration
+    - Proxy enable/disable functionality
+
+ -- arthur-cpp  Thu, 30 Oct 2025 14:47:58 +0300

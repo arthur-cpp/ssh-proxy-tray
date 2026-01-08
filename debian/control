@@ -1,0 +1,33 @@
+Source: ssh-proxy-tray
+Section: net
+Priority: optional
+Maintainer: arthur-cpp
+Build-Depends: debhelper-compat (= 13),
+               meson,
+               ninja-build,
+               qtbase5-dev,
+               qtbase5-dev-tools,
+               pkg-config
+Standards-Version: 4.6.0
+Homepage: https://github.com/arthur-cpp/ssh-proxy-tray
+
+Package: ssh-proxy-tray
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         openssh-client,
+         gsettings-desktop-schemas
+Description: SSH SOCKS proxy system tray application
+ SSH Proxy Tray is a Qt5-based system tray application for managing
+ SSH SOCKS proxy connections. It provides an easy-to-use interface
+ for enabling/disabling SSH proxy tunnels and configuring them as
+ system proxy or local-only proxy.
+ .
+ Features:
+  - System tray integration
+  - Enable/disable SSH SOCKS proxy
+  - System proxy or local-only mode
+  - Auto-connect on startup
+  - Autostart support
+  - Settings dialog for configuration
+  - Real-time proxy status monitoring

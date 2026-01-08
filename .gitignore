@@ -1,0 +1,14 @@
+.idea
+
+# Debian build artifacts
+debian/.debhelper/
+debian/*.substvars
+debian/files
+debian/debhelper-build-stamp
+debian/ssh-proxy-tray/
+debian/tmp/
+build-deb/
+*.deb
+*.ddeb
+*.buildinfo
+*.changes
