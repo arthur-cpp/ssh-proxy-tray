@@ -138,7 +138,7 @@ bool enableProxy() {
 bool disableProxy(bool clearSystemProxy = true) {
     // disable system proxy if clearing is needed
     // clearSystemProxy is used when switching mode - need to clear old settings
-    if (clearSystemProxy) {
+    if (clearSystemProxy && useSystemProxySetting()) {
         // check current state in gsettings - if proxy was configured, clear it
         QProcess checkProc;
         checkProc.start("gsettings", {"get", "org.gnome.system.proxy", "mode"});

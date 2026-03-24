@@ -1,5 +1,5 @@
 project('ssh-proxy-tray', 'cpp',
-        version: '0.2.3-1',
+        version: '0.2.4-1',
         default_options : [
           'cpp_std=c++20',
           'warning_level=3',

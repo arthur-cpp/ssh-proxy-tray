@@ -1,3 +1,9 @@
+ssh-proxy-tray (0.2.4-1) unstable; urgency=medium
+
+  * Bugfix: Prevent overwriting system proxy settings when "Use as system proxy" is disabled.
+
+ -- arthur-cpp <116725149+arthur-cpp@users.noreply.github.com>  Tue, 24 Mar 2026 18:15:04 +0300
+
 ssh-proxy-tray (0.2.3-1) unstable; urgency=medium
 
   * Add desktop file for application menu entry
